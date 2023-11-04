@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+int hollSq(int a){
+    for(int i=0; i<a; i++){
+        for(int j=0; j<a; j++){
+             if(i==0 || i==(a-1) || j==0 || j==(a-1)){
+                cout<<"* ";
+             }
+             else{
+                cout<<"  ";
+             }
+             
+        }
+        cout<<endl;
+       
+    }
+}
+int main(){
+    int a=5;
+    hollSq(a);
+}
